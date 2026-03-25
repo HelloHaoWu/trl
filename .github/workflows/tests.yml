@@ -51,10 +51,9 @@ jobs:
       contents: read
     name: Tests with latest dependencies
     runs-on:
-      group: aws-g6e-4xlarge
+      group: aws-g4dn-2xlarge-plus
     container:
       image: pytorch/pytorch:2.8.0-cuda12.8-cudnn9-devel
-      options: --gpus all
     defaults:
       run:
         shell: bash
@@ -103,10 +102,9 @@ jobs:
       contents: read
     name: Tests with dev dependencies
     runs-on:
-      group: aws-g6e-4xlarge
+      group: aws-g4dn-2xlarge-plus
     container:
       image: pytorch/pytorch:2.8.0-cuda12.8-cudnn9-devel
-      options: --gpus all
     defaults:
       run:
         shell: bash
@@ -160,10 +158,9 @@ jobs:
       contents: read
     name: Tests without optional dependencies
     runs-on:
-      group: aws-g6e-4xlarge
+      group: aws-g4dn-2xlarge-plus
     container:
       image: pytorch/pytorch:2.8.0-cuda12.8-cudnn9-devel
-      options: --gpus all
     defaults:
       run:
         shell: bash
@@ -212,10 +209,9 @@ jobs:
       contents: read
     name: Tests with minimum versions
     runs-on:
-      group: aws-g6e-4xlarge
+      group: aws-g4dn-2xlarge-plus
     container:
       image: pytorch/pytorch:2.8.0-cuda12.8-cudnn9-devel
-      options: --gpus all
     defaults:
       run:
         shell: bash
@@ -271,7 +267,6 @@ jobs:
       group: aws-g5-12xlarge-cache
     container:
       image: pytorch/pytorch:2.8.0-cuda12.8-cudnn9-devel
-      options: --gpus all
     defaults:
       run:
         shell: bash
