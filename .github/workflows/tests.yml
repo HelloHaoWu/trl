@@ -50,7 +50,7 @@ jobs:
       contents: read
     name: Tests with latest dependencies
     runs-on:
-      group: aws-g4dn-2xlarge-plus
+      group: aws-g6e-2xlarge-plus
     container:
       image: pytorch/pytorch:2.11.0-cuda12.8-cudnn9-devel
     defaults:
@@ -106,7 +106,7 @@ jobs:
       contents: read
     name: Tests with dev dependencies
     runs-on:
-      group: aws-g4dn-2xlarge-plus
+      group: aws-g6e-2xlarge-plus
     container:
       image: pytorch/pytorch:2.11.0-cuda12.8-cudnn9-devel
     defaults:
@@ -162,7 +162,7 @@ jobs:
       contents: read
     name: Tests without optional dependencies
     runs-on:
-      group: aws-g4dn-2xlarge-plus
+      group: aws-g6e-2xlarge-plus
     container:
       image: pytorch/pytorch:2.11.0-cuda12.8-cudnn9-devel
     defaults:
@@ -213,7 +213,7 @@ jobs:
       contents: read
     name: Tests with minimum versions
     runs-on:
-      group: aws-g4dn-2xlarge-plus
+      group: aws-g6e-2xlarge-plus
     container:
       image: pytorch/pytorch:2.11.0-cuda12.8-cudnn9-devel
     defaults:
